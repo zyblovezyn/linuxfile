@@ -1,0 +1,4 @@
+DVCS  Distributed Version Control System 分布式版本控制协议
+git每一次提取最新版本的文件快照，都把代码仓库完整的镜像下来。
+
+
