@@ -1,0 +1,72 @@
+CAT command - cat 命令
+NAME
+       cat - concatenate files and print on the standard output
+	   - 连接文件并以标准输出打印到屏幕上  
+SYNOPSIS - 概要 摘要
+       cat [OPTION]... [FILE]...
+
+DESCRIPTION - 描述
+       Concatenate FILE(s), or standard input, to standard output.
+
+       -A, --show-all
+              equivalent to -vET - 等于 -vET
+
+       -b, --number-nonblank
+              number nonempty output lines, overrides -n  - 非空行不显示行号
+
+       -e     equivalent to -vE - 等于-vE
+
+       -E, --show-ends
+              display $ at end of each line - 显示行结尾符号$
+
+       -n, --number
+              number all output lines - 显示所有行的行号
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines - 多个连续空行只显示一行空行
+
+       -t     equivalent to -vT  - 等于vT
+
+       -T, --show-tabs
+              display TAB characters as ^I  - tab显示为^I
+
+       -u     (ignored)
+
+       -v, --show-nonprinting
+              use ^ and M- notation, except for LFD and TAB  - 
+
+       --help display this help and exit -帮助
+
+       --version
+              output version information and exit - 版本
+
+       With no FILE, or when FILE is -, read standard input. - 如果没有文件或者文件名称为-
+       							     - 读取标准输入 
+
+EXAMPLES
+       cat f - g
+              Output f's contents, then standard input, then g's contents.
+
+       cat    Copy standard input to standard output.
+
+       GNU  coreutils  online  help: <http://www.gnu.org/software/coreutils/> Report cat translation
+       bugs to <http://translationproject.org/team/>
+
+AUTHOR
+       Written by Torbjorn Granlund and Richard M. Stallman.
+
+COPYRIGHT
+       Copyright © 2013 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3  or  later
+       <http://gnu.org/licenses/gpl.html>.
+       This  is free software: you are free to change and redistribute it.  There is NO WARRANTY, to
+       the extent permitted by law.
+
+SEE ALSO
+       tac(1)
+
+       The full documentation for cat is maintained as a Texinfo manual.  If the info and  cat  pro‐
+       grams are properly installed at your site, the command
+
+              info coreutils 'cat invocation'
+
+       should give you access to the complete manual.
