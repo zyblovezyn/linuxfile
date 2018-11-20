@@ -45,4 +45,27 @@ punct:标点符号
 space:空白字符
 xdigit:十六进制字符
 
+sort -n filename 对文件按数字排序
+sort -r filename 对文件按数字排序,逆序
+sort -C filename 检测文件是否已经排序
+#/bin/bash
+if [ $? -eq 0 ];then
+	echo Sorted
+else
+	echo Unsorted
+fi
+
+sort -m sorted1 sorted2 合并排序过的文件，对新文件不再排序
+
+sort -k n data.txt 依据第n列进行排序
+sort -k n,m data.txt 按第n到第m字符进行排序
+sort -u data.txt 只显示唯一的行
+sort unsorted.txt | uniq -d 找出文件中重复的行
+sort data.txt | uniq -s 2 -w 2 比较时跳过2个字符,比较宽度为2
+
+linux中/tmp的文件会在系统重启后清空
+temp_file='/tmp/file-$RANDOM' $RANDOM返回一个随机数
+temp_file='/tmp/var.$$' $$是当前运行脚本的进程ID
+
+
 
