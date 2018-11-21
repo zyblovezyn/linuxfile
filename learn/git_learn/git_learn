@@ -15,7 +15,7 @@
 
 	方法二：完全覆盖本地代码，只保留服务器端代码，则直接回退到上一个版本
 	再进行pull
-	git reset --hard
+	git reset --head
 	git pull origin master -- origin master 表示git的主分支
 
 	修改最后一次提交
@@ -26,3 +26,16 @@
 	此命令将使用当前的暂存区域快照提交。如果刚才提交完没有作任何改动，
 	直接运行此命令的话，相当于有机会重新编辑提交说明，
 	但将要提交的文件快照和之前的一样。
+
+	git remote add [shortname] url -- 添加远程库
+	git remote -v 	--查看远程库信息
+
+	git fetch [remote-name]	--从远程仓库抓取数据到本地
+				--会抓取所有本地仓库没有的数据
+	git remote show origin	--显示远程仓库的信息
+	git remote rename [oldname] [newname]	--重命名远程仓库
+	git remote rm [remotename]	--移除远程仓库
+
+	git tag -a v1.0.0 -m 'my version 1.0.0'	-- a:annotate 注释 注解
+	git config --global alias.co checkout -- 设置checkout的别名为co
+
