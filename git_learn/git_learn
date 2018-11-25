@@ -39,3 +39,5 @@
 	git tag -a v1.0.0 -m 'my version 1.0.0'	-- a:annotate 注释 注解
 	git config --global alias.co checkout -- 设置checkout的别名为co
 
+
+

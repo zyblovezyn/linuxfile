@@ -1,0 +1,19 @@
+local variables
+	这种变量只在代码块和函数中可见
+environmental variables
+	这种变量将改变用户接口和shell的行为
+positional parameters
+	$0脚本文件的名称，$1是第一个变量 $2是第二个变量
+
+	如果脚本需要命令行参数，而调用的时候没有参数，这就可能造成分配一个
+空变量，这样估计就会引起问题。解决方法如下：
+1.变量加_通过${val/_/} 替换掉_
+2.检测变量
+if [ -z $1 ]
+then
+	exit $E_MISSING_POS_PARAM
+fi
+
+3.使用${$1:-$DefaultVal}
+
+
