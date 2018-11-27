@@ -1,7 +1,0 @@
-local variables
-	这种变量只在代码块和函数中可见
-environmental variables
-	这种变量将改变用户接口和shell的行为
-positional parameters
-	$0脚本文件的名称，$1是第一个变量 $2是第二个变量
-
