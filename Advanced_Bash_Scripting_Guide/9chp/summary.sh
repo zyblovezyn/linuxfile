@@ -23,4 +23,36 @@ xyz23()
 
 xyz23
 
+echo "$PATH"
+echo "-------"
+PATH=${APTH}:/opt/bin #将/opt/bin目录附加到$PATH变量中
+					  #这是在脚本中添加目录到$PATH中的简便方法，
+					  #这样在这个脚本退出后，$PATH将恢复原样
+echo "$PATH"
 
+echo "------------------------------"
+
+E_WRONG_DIRECTORY=73
+
+clear
+
+TargetDirectory=/home/bozo/projects/GreatAmericanNovel
+
+cd $GreatAmericanNovel
+echo "Deleting stale files in $GreatAmericanNovel"
+
+if [ "$PWD" != "$TargetDirectory" ];then
+	echo "Wrong directory"
+	echo "In $PWD,rather than $TargetDirectory"
+	echo "Bailing out"
+	exit $E_WRONG_DIRECTORY
+fi
+
+rm -rf *
+rm .[A-Za-z0-9]*   # 删除.文件(隐含文件)
+
+rm -f .[^.]*..?*    # 删除以多个..开头的文件
+
+echo "done"
+echo "Old files deleted in $TargetDirectory"
+echo
