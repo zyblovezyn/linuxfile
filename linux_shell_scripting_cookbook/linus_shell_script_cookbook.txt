@@ -67,5 +67,5 @@ linux中/tmp的文件会在系统重启后清空
 temp_file='/tmp/file-$RANDOM' $RANDOM返回一个随机数
 temp_file='/tmp/var.$$' $$是当前运行脚本的进程ID
 
-
+comm命令可以用于两个文件进行比较.需要注意的是比较的文件必须是排过序的
 
