@@ -1,0 +1,20 @@
+-Xms 堆的最小值
+-Xmx 堆的最大值
+-Xss 栈大小
+-XX:+HeapDumpOnOutOfMemoryError 可以让虚拟机在出现内存溢出异常时Dump出当前内存堆转储快照以便事后进行分析
+
+Memory leak 内存泄漏
+Memory Overflow 内存溢出
+
+如果线程请求的栈深度大于虚拟机所允许的最大深度，将抛出StackOverflowEror异常
+如果虚拟机在扩展栈时无法申请到足够的内存空间，则抛出OutOfMemoryError异常
+
+MaxPermSize 最大方法区容量
+
+由于常量池分配在永久代内，我们可以通过-XX:PermSize和-XX:MaxPermSize限制方法区大小，从而间接限制其中常量池的容量
+
+-XX:MaxDirectMemorySize 本机直接内存最大值 如果不指定与Java堆最大值(-Xms指定)一样
+
+程序计数器、虚拟机栈、本地方法栈3个区域随线程而生，随线程而灭。
+
+
