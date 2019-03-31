@@ -1,0 +1,5 @@
+2019-03-30
+	duplicate 重复
+	declare duplicate_key condition for 1062;
+	declare continue handler for duplicate_key set variable=1;
+
