@@ -3,3 +3,45 @@
 	declare duplicate_key condition for 1062;
 	declare continue handler for duplicate_key set variable=1;
 
+2019-04-01
+	YEAR   		 1byte
+	DATE	        3byte
+	TIME		3byte+fractional seconds storage
+	DATETIME	5byte+fractional seconds storage	
+	TIMESTAMP	4byte+franctional seconds storage
+
+	Fractional Seconds Precison	Storage Required
+	0				0 bytes
+	1,2				1 byte
+	3,4				2 bytes
+	5,6				3 bytes
+
+
+	Data Type	Storage Required
+	TINYINT		1 byte
+	SMALLINT	2 bytes
+	MEDIUMINT	3 bytes
+	INT, INTEGER	4 bytes
+	BIGINT		8 bytes
+	FLOAT(p)	4 bytes if 0 <= p <= 24, 8 bytes if 25 <= p <= 53
+	FLOAT		4 bytes
+	DOUBLE [PRECISION], REAL	8 bytes
+	DECIMAL(M,D), NUMERIC(M,D)	
+	BIT(M)	approximately (M+7)/8 bytes
+
+
+	CMS concurrent mark sweep 收集器
+	
+	decimal(18,9) 小数点前面9位数4个字节 小数点后面9个数4个字节 小数点一个字节 总用9个字节
+	使用枚举类型(ENUM)代替字符串类型 枚举列可以把一些不重复的字符串存储成一个预定义的集合。MySQL在存储枚举是非常紧凑，会根据列表值得数量压缩到一个或两个字节中。
+	create table enum_table(
+	  e enum('fish','dog','apple') not null
+	);
+	inert into enum_table(e) values('dog'),('apple'),('fish');
+	
+	mysql把bit当做字符串类型，最多可以存储64位
+	整数作为标识符是最好的选择
+	避免使用字符串作为标识，因为比数字慢，在myisam中对字符串标识列使用压缩索引，导致查询很慢，测试表示，最多慢6倍
+
+
+
