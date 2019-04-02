@@ -43,5 +43,14 @@
 	整数作为标识符是最好的选择
 	避免使用字符串作为标识，因为比数字慢，在myisam中对字符串标识列使用压缩索引，导致查询很慢，测试表示，最多慢6倍
 
+	如果希望查询性能比较好，最好限制在12个关联查询之内
+	mysql在索引中存储null值，oracle则不会
+	创建表结构 create table a_copy_tbl like a_tbl;
+	rename table tbl_name to new_tbl;
+	所有的modify column都将导致重建表
+	alter table tbl modify column col_name tinyint(3) not null default 5;速度比较慢导致了重建表
+	alter table tbl alter column col_name set default 5;没有导致重建表
+
+
 
 
