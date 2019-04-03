@@ -156,5 +156,9 @@
 	（23）-XX:+UseSpining 开启自旋锁
 
 	（24）-XX:PreBlockSpin 更改自旋锁的自旋次数，使用这个参数必须先开启自旋锁
+	
+	shell中 $((数学表达式)) 
+	$$使用脚本的进程ID
+	let "赋值表达式或算数表达式"
+	let "var1=12"   let "var2+=1"
 
-	 
