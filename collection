@@ -161,4 +161,9 @@
 	$$使用脚本的进程ID
 	let "赋值表达式或算数表达式"
 	let "var1=12"   let "var2+=1"
+	
+	coalesce(x,y) = case x when x is not null then x else y end;
+	
+	explicit 显示 清楚地 在歌曲前显示 则表示包含脏话的
+
 
