@@ -84,10 +84,6 @@
 		     -v 输出虚拟机进程启动时JVM参数
 	jstat JVM Statistics Monitoring Tool 监视虚拟机运行状态信息的命令行工具
 
-
-
-
-
 2019-04-03
 	mysql sql_calc_found_rows的使用计算出查询出生的行
 	SELECT SQL_CALC_FOUND_ROWS * FROM a;
@@ -166,4 +162,9 @@
 	
 	explicit 显示 清楚地 在歌曲前显示 则表示包含脏话的
 
+	((...))与let命令很想,允许所属扩展和赋值
 
+	for arg in [list]
+	do
+		commands
+	done
