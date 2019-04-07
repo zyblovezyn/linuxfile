@@ -1,9 +1,8 @@
-2019-03-30
+	mysql
 	duplicate 重复
 	declare duplicate_key condition for 1062;
 	declare continue handler for duplicate_key set variable=1;
 
-2019-04-01
 	YEAR   		 1byte
 	DATE	        3byte
 	TIME		3byte+fractional seconds storage
@@ -29,9 +28,6 @@
 	DECIMAL(M,D), NUMERIC(M,D)	
 	BIT(M)	approximately (M+7)/8 bytes
 
-
-	CMS concurrent mark sweep 收集器
-	
 	decimal(18,9) 小数点前面9位数4个字节 小数点后面9个数4个字节 小数点一个字节 总用9个字节
 	使用枚举类型(ENUM)代替字符串类型 枚举列可以把一些不重复的字符串存储成一个预定义的集合。MySQL在存储枚举是非常紧凑，会根据列表值得数量压缩到一个或两个字节中。
 	create table enum_table(
@@ -52,6 +48,9 @@
 	alter table tbl modify column col_name tinyint(3) not null default 5;速度比较慢导致了重建表
 	alter table tbl alter column col_name set default 5;没有导致重建表
 	
+	jvm
+	CMS concurrent mark sweep 收集器
+		
 	-XX:+PrintGCDetails 这个参数告诉虚拟机在发生垃圾收集行为时打印内存回收日志。
 
 	-Xms 堆的最小值
@@ -168,3 +167,52 @@
 	do
 		commands
 	done
+
+	set -- $var #解析变量并设置位置参数
+
+	redis 锁 watch unwatch multi exec discard
+
+	N 非负整数 {0,1,2,3,4 ...}
+	N* 正整数 {1,2,3,4...}
+	Z 整数 {0,1,-1,2,-2...}
+	Q 有理数 {x|x=p/q,q,p属于Z} 由毕达哥拉斯提出
+	R 实数 {x|数轴上点的坐标}
+
+	linux内核中的进程状态
+		运行状态
+		可中断的睡眠
+		不可中断的睡眠
+		暂停状态
+		僵死状态
+	
+	vim 行寻址符号
+	full name	Abbreviation	Meaning
+	delete		d				删除行
+	move		m				移动行
+	copy		co				复制行
+				t				复制行
+	:3,18d 删除3到18行
+	:160,224m23将160到224移动到23行之后
+	:23，29co100将23到29行赋值到100行之后
+
+	set nu 显示行号
+	set nonu 不显示行号
+	:= 显示总行数
+	:/pattern/= 显示pattern第一次出现时的行号
+	.当前行 $文件最后一行 %每一行 
+		
+	:%d 删除所有行
+	:.,$d 删除当前行到文件结尾的文本
+	:20,.m$ 第20行到当前行移动到文件结尾
+	:%t$ 将所有行复制到文件结尾
+	:.,.+20d 删除当前行到20行之后的行之间的文本
+	:226,$m.-2 将第226到文件结尾间的行移动到当前这一行的两行之间
+	:.,+20# 显示当前这一行及向下20行之间的行号 事实上在使用+或-时并不需要输入.因为当前行会被假定为开始的位置
+	0表示文件的开头
+	:-,+t0复制三行到文件开头
+
+
+
+
+
+
