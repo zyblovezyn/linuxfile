@@ -1,0 +1,7 @@
+mysql 的数据导入到redis中
+
+先执行 create-table.sql
+	mysql -uroot -pzyb12358 < /root/linuxfile/mysql/redis-to-mysql/create-table.sql
+在执行mysql-to-redis.sql
+	mysql -uroot -pzyb12358 < /root/linuxfile/mysql/redis-to-mysql/mysql-to-redis.sql
+	
