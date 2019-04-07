@@ -18,7 +18,7 @@ then
 	exit 126
 fi
 
-date=`date +%Y-%m-%d %H:%M`
+date=`date +"%Y-%m-%d %H:%M"`
 git add .
 git commit -m "$date $1"
 git push
