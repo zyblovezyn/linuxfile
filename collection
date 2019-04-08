@@ -43,7 +43,7 @@
 	如果希望查询性能比较好，最好限制在12个关联查询之内
 	mysql在索引中存储null值，oracle则不会
 	创建表结构 create table a_copy_tbl like a_tbl;
-	rename table tbl_name to new_tbl;
+	rename table old_name to new_tbl;
 	所有的modify column都将导致重建表
 	alter table tbl modify column col_name tinyint(3) not null default 5;速度比较慢导致了重建表
 	alter table tbl alter column col_name set default 5;没有导致重建表
@@ -91,7 +91,7 @@
 	locate('2','123') 返回2 
 	locate('0','123') 返回0
 
-	为了高效的把数据载入到MyISAM中可以：此方法对非唯一所以有效 唯一索引无效
+	为了高效的把数据载入到MyISAM中可以：此方法对非唯一索引有效 唯一索引无效
 
 	表和索引行都存储在页中，页的大小一般为4KB
 	
@@ -154,6 +154,7 @@
 	
 	shell中 $((数学表达式)) 
 	$$使用脚本的进程ID
+	$0当前脚本名称
 	let "赋值表达式或算数表达式"
 	let "var1=12"   let "var2+=1"
 	
@@ -179,21 +180,21 @@
 	R 实数 {x|数轴上点的坐标}
 
 	linux内核中的进程状态
-		运行状态
+		运行态
 		可中断的睡眠
 		不可中断的睡眠
-		暂停状态
-		僵死状态
+		暂停态
+		僵死态
 	
 	vim 行寻址符号
 	full name	Abbreviation	Meaning
 	delete		d				删除行
 	move		m				移动行
 	copy		co				复制行
-				t				复制行
+			t				复制行
 	:3,18d 删除3到18行
 	:160,224m23将160到224移动到23行之后
-	:23，29co100将23到29行赋值到100行之后
+	:23,29co100将23到29行赋值到100行之后
 
 	set nu 显示行号
 	set nonu 不显示行号
@@ -256,6 +257,25 @@
 
 	num1 -ge num2             大于或等于    [ 3 -ge $mynum ]
 
+数据索引的设计与优化
+	知识点
+	如果一张表的平均长度大于表页大小的三分之一，那么空间利用率将很糟
+	一个4KB大小的页只能存储一个长度为2100字节的行
+
+	基本问题发(BQ) Basic Question
+	快速上限估算法 Quick Upper-Bound Estimate
+
+	基本问题发(BQ)
+		对每一个select语句，一下问题的答案都必须按照下述步骤来考虑
+		1 是否有一个已经存在的索引包含了where子句所引用的所有列(一个半宽索引)？
+		
+	LRT 本地相应时间
+	比较值
+	LRT=TR*10ms + TS*0.01ms
+	绝对值
+	LRT=TR*10ms + TS*0.01ms + F*0.1ms
+
+	TR随机访问的数量 TS顺序访问的数量 F有效FETCH的数量
 
 
-
+	
