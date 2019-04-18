@@ -276,13 +276,4 @@
 
 	代码编译的结果从本地机器码转变成字节码，是存储格式发展的一小步，确实编程语言发展的一大步
 
-	synchronized关键字加到static静态方法上是给Class类上锁，而synchronized关键字加到非static静态方法上是给对象上锁。
-
-	Thread.State java线程状态
-	NEW 至今尚未启动的线程
-	RUNNABLE 正在java虚拟机中执行的线程
-	BLOCKED 受阻塞并等待某个监视器锁的线程
-	WAITING 无限期地等待另一个线程来执行某一特定操作的线程
-	TIMED_WAITING 等待另一个线程来执行取决于指定等待时间的操作的线程
-	TERMINATE 已退出的线程
 		
