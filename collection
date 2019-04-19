@@ -286,3 +286,17 @@
 	TIMED_WAITING 等待另一个线程来执行取决于指定等待时间的操作的线程
 	TERMINATE 已退出的线程
 		
+	新生代收集器:Serial ParNew Parallel Scavenge
+	老年代收集器:Serial Old Parallel Old CMS G1
+
+	algorism 算法 tenure 任期 serial 序列
+	constraint 约束
+
+	set foreign_key_checks=0
+	load data...
+	set fireign_key_checks=1
+
+	水平分区，将同一张表不同的行的记录分配到不同的物理文件
+	垂直分区，将同一张表不同的列的记录分配到不同的物理文件
+	mysql支持水平分区，不支持垂直分区
+
