@@ -300,3 +300,4 @@
 	垂直分区，将同一张表不同的列的记录分配到不同的物理文件
 	mysql支持水平分区，不支持垂直分区
 
+	reentrant 在进入 ReentrantLock 重入锁 semaphore
