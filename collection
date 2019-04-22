@@ -300,4 +300,17 @@
 	垂直分区，将同一张表不同的列的记录分配到不同的物理文件
 	mysql支持水平分区，不支持垂直分区
 
-	reentrant 在进入 ReentrantLock 重入锁 semaphore
+	reentrant 再进入 ReentrantLock 重入锁 semaphore
+	
+	get与post的区别
+		get提交的表单会在地址栏中显示post不会
+		get表单提交有长度限制512 post理论上没有限制
+		get提交以字符 post字节字符 默认字符
+		get会先读浏览器的缓存 
+	
+	servlet的生命周期是由容器管理的
+	servlet的生命周期简答班:servlet的生命周期是由容器管理的；它分为三个阶段:	初始化 使用 销毁
+	当有客户端浏览器第一次访问这个servlet时，tomcat会立即创建这个servlet对象并且在创建结束后立即调用init()方法初始化；而后在新的线程中调用service方法。
+	tomcat会将实例化后的servlet做一个缓存，当客户端再次请求servlet时容器不会创建servlet对象，而是直接在新的线程中调用service。当容器在关闭时，容器会在关闭之前调用servlet的destroy方法。
+
+
