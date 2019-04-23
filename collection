@@ -301,3 +301,4 @@
 	mysql支持水平分区，不支持垂直分区
 
 	reentrant 在进入 ReentrantLock 重入锁 semaphore
+	cardinality 基数
