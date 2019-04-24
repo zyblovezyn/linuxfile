@@ -317,4 +317,6 @@
 	reentrant 在进入 ReentrantLock 重入锁 semaphore
 	cardinality 基数
 
+	egrep -i 选项忽略大小写
+
 
