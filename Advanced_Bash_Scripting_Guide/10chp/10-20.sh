@@ -8,5 +8,34 @@
 
 # break continue 再循环中的应用
 
-LIMIT=9
+LIMIT=19
+
+echo 
+echo "---------------------"
+
+a=0
+
+while [ $a -le "$LIMIT" ]
+do
+	a=$(($a+1))
+	if [ "$a" -eq 3 ] || [ "$a" -eq 11 ]
+	then
+		continue
+	fi
+	echo "$a "
+done
+echo
+
+a=0
+
+while [ "$a" -le $LIMIT ];do
+	a=$(($a+1))
+	if [ $a -eq 3 ] || [ $a -eq 11 ];then
+		break;
+	fi
+	echo $a
+done
+echo
+exit 0
+
 
