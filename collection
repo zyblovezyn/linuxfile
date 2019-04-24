@@ -300,6 +300,7 @@
 	垂直分区，将同一张表不同的列的记录分配到不同的物理文件
 	mysql支持水平分区，不支持垂直分区
 
+<<<<<<< HEAD
 	reentrant 再进入 ReentrantLock 重入锁 semaphore
 	
 	get与post的区别
@@ -314,3 +315,7 @@
 	tomcat会将实例化后的servlet做一个缓存，当客户端再次请求servlet时容器不会创建servlet对象，而是直接在新的线程中调用service。当容器在关闭时，容器会在关闭之前调用servlet的destroy方法。
 
 
+=======
+	reentrant 在进入 ReentrantLock 重入锁 semaphore
+	cardinality 基数
+>>>>>>> 7cab7902ead7db8734b2ad942345f224bc13dca8
