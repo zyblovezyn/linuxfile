@@ -319,4 +319,16 @@
 
 	egrep -i 选项忽略大小写
 
+	select * from tbl_name for update;
+	select * from tbl_name lock in share mode;
+
+	脏页：缓冲池中的数据已经修改，还没有刷新到磁盘中
+	脏数据是指未提交的数据，如果读到了脏数据，即一个事物可以读到另外一个事物中未提交的数据
+	丢失更新是所导致的问题，简单来说就是一个事务的更新操作会被另一个事务的更新操作所覆盖，从而导致数据不一致的问题。
+
+	ACID A:原子性 atomicity 
+	     C:一致性 consistency
+	     I:隔离性 isolation
+	     D:持久性 duration
+	
 
