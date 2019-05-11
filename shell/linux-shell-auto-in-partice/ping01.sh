@@ -6,4 +6,4 @@
 #########################################################################
 #!/bin/bash
 
-ping -c1 www.baidu.com && echo "ping www.baidu.com is success"
+ping -c1 www.baidu.com &> /dev/null && echo "ping www.baidu.com is success" || echo "ping is failed"
