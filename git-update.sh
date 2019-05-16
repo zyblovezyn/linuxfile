@@ -20,5 +20,5 @@ fi
 
 date=`date +"%Y-%m-%d %H:%M"`
 git add .
-git commit -m "提交时间:$date 注释:$1"
+git commit -m "提交时间:$date 注释:\'$1\'"
 git push
