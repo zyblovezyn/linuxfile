@@ -1,0 +1,5 @@
+﻿  C-Project.c
+f:\学习\linuxfile\c-program\c-project\c-project\c-project\c-project.c(8): warning C4101: “left”: 未引用的局部变量
+f:\学习\linuxfile\c-program\c-project\c-project\c-project\c-project.c(9): warning C4101: “right”: 未引用的局部变量
+f:\学习\linuxfile\c-program\c-project\c-project\c-project\c-project.c(26): warning C4133: “=”: 从“char *”到“int *”的类型不兼容
+  C-Project.vcxproj -> F:\学习\linuxfile\c-program\c-project\C-Project\Debug\C-Project.exe
