@@ -6,6 +6,7 @@
 #########################################################################
 #!/bin/bash
 
+IFS="|"
 if [ $# -lt 0 ]
 then
 	echo '请输入提交注释'
@@ -17,8 +18,8 @@ then
 	echo '参数不能为空'
 	exit 126
 fi
-
+git pull
 date=`date +"%Y-%m-%d %H:%M"`
 git add .
-git commit -m "提交时间:$date 注释:\'$1\'"
+git commit -m "提交时间:$date 注释:$1"
 git push
