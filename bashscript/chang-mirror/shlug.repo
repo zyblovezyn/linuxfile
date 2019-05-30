@@ -1,0 +1,50 @@
+
+#mirrors-shlug-org.repo 
+# 
+# rpm --import http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6
+# 
+# This file uses a new mirrorlist system developed by Lance Davis for CentOS. 
+# The mirror system uses the connecting IP address of the client and the 
+# update status of each mirror to pick mirrors that are updated to and 
+# geographically close to the client. You should use this for CentOS updates 
+# unless you are manually picking other mirrors. 
+# 
+# If the mirrorlist= does not work for you, as a fall back you can try the 
+# remarked out baseurl= line instead. 
+# 
+# 
+[base] 
+name=mirrors-shlug-org--CentOS-$releasever - Base 
+baseurl=http://mirrors.shlug.org/centos/$releasever/os/$basearch/ 
+gpgcheck=1 
+gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6 
+#released updates 
+[update] 
+name=mirrors-shlug-org--CentOS-$releasever - Updates 
+baseurl=http://mirrors.shlug.org/centos/$releasever/updates/$basearch/ 
+gpgcheck=1 
+gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6
+#packages used/produced in the build but not released 
+#[addons] 网站上的源目录没有addon，故注释掉
+#baseurl=http://mirrors.shlug.org/centos/$releasever/addons/$basearch/ 
+#gpgcheck=1 
+#gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6 
+#additional packages that may be useful 
+[extras] 
+name=mirrors-shlug-org--CentOS-$releasever - Extras 
+baseurl=http://mirrors.shlug.org/centos/$releasever/extras/$basearch/ 
+gpgcheck=1 
+gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6 
+#additional packages that extend functionality of existing packages 
+[centosplus] 
+name=mirrors-shlug-org--CentOS-$releasever - Plus 
+baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/ 
+gpgcheck=1 
+gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6 
+#contrib - packages by Centos Users 
+[contrib] 
+name=mirrors-shlug-org--CentOS-$releasever - Contrib 
+baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/ 
+gpgcheck=1 
+enabled=0 
+gpgkey=http://mirrors.shlug.org/centos/RPM-GPG-KEY-CentOS-6
