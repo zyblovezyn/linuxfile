@@ -1,0 +1,358 @@
+10115:S 04 Apr 11:36:22.527 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+10115:S 04 Apr 11:36:22.528 # Creating Server TCP listening socket 192.168.109.111:7503: bind: Address already in use
+9989:signal-handler (1554392236) Received SIGTERM scheduling shutdown...
+9989:S 04 Apr 11:37:16.650 # User requested shutdown...
+9989:S 04 Apr 11:37:16.650 * Calling fsync() on the AOF file.
+9989:S 04 Apr 11:37:16.650 * Saving the final RDB snapshot before exiting.
+9989:S 04 Apr 11:37:16.651 * DB saved on disk
+9989:S 04 Apr 11:37:16.651 * Removing the pid file.
+9989:S 04 Apr 11:37:16.651 # Redis is now ready to exit, bye bye...
+10183:S 04 Apr 11:37:19.172 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 10183
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10183:S 04 Apr 11:37:19.173 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10183:S 04 Apr 11:37:19.173 # Server started, Redis version 3.2.6
+10183:S 04 Apr 11:37:19.173 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10183:S 04 Apr 11:37:19.174 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10183:S 04 Apr 11:37:19.174 * The server is now ready to accept connections on port 7503
+10183:S 04 Apr 11:37:19.174 * Connecting to MASTER 192.168.109.111:7501
+10183:S 04 Apr 11:37:19.174 * MASTER <-> SLAVE sync started
+10183:S 04 Apr 11:37:19.174 * Non blocking connect for SYNC fired the event.
+10183:S 04 Apr 11:37:19.174 * Master replied to PING, replication can continue...
+10183:S 04 Apr 11:37:19.174 * Partial resynchronization not possible (no cached master)
+10183:S 04 Apr 11:37:19.175 * Full resync from master: 062568f565f7488d16e747f6c9c28f8d524b7910:1
+10183:S 04 Apr 11:37:19.251 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+10183:S 04 Apr 11:37:19.252 * MASTER <-> SLAVE sync: Flushing old data
+10183:S 04 Apr 11:37:19.252 * MASTER <-> SLAVE sync: Loading DB in memory
+10183:S 04 Apr 11:37:19.252 * MASTER <-> SLAVE sync: Finished with success
+10183:S 04 Apr 11:37:19.254 * Background append only file rewriting started by pid 10200
+10183:S 04 Apr 11:37:19.319 * AOF rewrite child asks to stop sending diffs.
+10200:C 04 Apr 11:37:19.319 * Parent agreed to stop sending diffs. Finalizing AOF...
+10200:C 04 Apr 11:37:19.320 * Concatenating 0.00 MB of AOF diff received from parent.
+10200:C 04 Apr 11:37:19.320 * SYNC append only file rewrite performed
+10200:C 04 Apr 11:37:19.320 * AOF rewrite: 6 MB of memory used by copy-on-write
+10183:S 04 Apr 11:37:19.379 * Background AOF rewrite terminated with success
+10183:S 04 Apr 11:37:19.379 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+10183:S 04 Apr 11:37:19.380 * Background AOF rewrite finished successfully
+10183:signal-handler (1554392496) Received SIGTERM scheduling shutdown...
+10183:S 04 Apr 11:41:36.220 # Connection with master lost.
+10183:S 04 Apr 11:41:36.220 * Caching the disconnected master state.
+10183:S 04 Apr 11:41:36.269 # User requested shutdown...
+10183:S 04 Apr 11:41:36.269 * Calling fsync() on the AOF file.
+10183:S 04 Apr 11:41:36.269 * Saving the final RDB snapshot before exiting.
+10183:S 04 Apr 11:41:36.271 * DB saved on disk
+10183:S 04 Apr 11:41:36.271 * Removing the pid file.
+10183:S 04 Apr 11:41:36.271 # Redis is now ready to exit, bye bye...
+10434:S 04 Apr 11:41:38.661 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 10434
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10434:S 04 Apr 11:41:38.663 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10434:S 04 Apr 11:41:38.663 # Server started, Redis version 3.2.6
+10434:S 04 Apr 11:41:38.663 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10434:S 04 Apr 11:41:38.663 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10434:S 04 Apr 11:41:38.664 * The server is now ready to accept connections on port 7503
+10434:S 04 Apr 11:41:38.664 * Connecting to MASTER 192.168.109.111:7501
+10434:S 04 Apr 11:41:38.664 * MASTER <-> SLAVE sync started
+10434:S 04 Apr 11:41:38.664 * Non blocking connect for SYNC fired the event.
+10434:S 04 Apr 11:41:38.664 * Master replied to PING, replication can continue...
+10434:S 04 Apr 11:41:38.664 * Partial resynchronization not possible (no cached master)
+10434:S 04 Apr 11:41:38.665 * Full resync from master: 07bda5fb0e82c52830aa89580a6bafa148ffb9c1:1
+10434:S 04 Apr 11:41:38.753 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+10434:S 04 Apr 11:41:38.753 * MASTER <-> SLAVE sync: Flushing old data
+10434:S 04 Apr 11:41:38.753 * MASTER <-> SLAVE sync: Loading DB in memory
+10434:S 04 Apr 11:41:38.753 * MASTER <-> SLAVE sync: Finished with success
+10434:S 04 Apr 11:41:38.755 * Background append only file rewriting started by pid 10452
+10434:S 04 Apr 11:41:38.797 * AOF rewrite child asks to stop sending diffs.
+10452:C 04 Apr 11:41:38.797 * Parent agreed to stop sending diffs. Finalizing AOF...
+10452:C 04 Apr 11:41:38.797 * Concatenating 0.00 MB of AOF diff received from parent.
+10452:C 04 Apr 11:41:38.797 * SYNC append only file rewrite performed
+10452:C 04 Apr 11:41:38.797 * AOF rewrite: 6 MB of memory used by copy-on-write
+10434:S 04 Apr 11:41:38.864 * Background AOF rewrite terminated with success
+10434:S 04 Apr 11:41:38.864 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+10434:S 04 Apr 11:41:38.865 * Background AOF rewrite finished successfully
+10434:signal-handler (1554392600) Received SIGTERM scheduling shutdown...
+10434:S 04 Apr 11:43:20.284 # User requested shutdown...
+10434:S 04 Apr 11:43:20.284 * Calling fsync() on the AOF file.
+10434:S 04 Apr 11:43:20.284 * Saving the final RDB snapshot before exiting.
+10434:S 04 Apr 11:43:20.355 * DB saved on disk
+10434:S 04 Apr 11:43:20.355 * Removing the pid file.
+10434:S 04 Apr 11:43:20.355 # Redis is now ready to exit, bye bye...
+10555:S 04 Apr 11:43:23.665 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 10555
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10555:S 04 Apr 11:43:23.666 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10555:S 04 Apr 11:43:23.666 # Server started, Redis version 3.2.6
+10555:S 04 Apr 11:43:23.666 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10555:S 04 Apr 11:43:23.666 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10555:S 04 Apr 11:43:23.666 * The server is now ready to accept connections on port 7503
+10555:S 04 Apr 11:43:23.667 * Connecting to MASTER 192.168.109.111:7501
+10555:S 04 Apr 11:43:23.667 * MASTER <-> SLAVE sync started
+10555:S 04 Apr 11:43:23.667 * Non blocking connect for SYNC fired the event.
+10555:S 04 Apr 11:43:23.682 * Master replied to PING, replication can continue...
+10555:S 04 Apr 11:43:23.691 * Partial resynchronization not possible (no cached master)
+10555:S 04 Apr 11:43:23.691 * Full resync from master: 7ff13544a94a6343c1dc9b27787e2e7bec8d7d2c:1
+10555:S 04 Apr 11:43:23.749 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+10555:S 04 Apr 11:43:23.749 * MASTER <-> SLAVE sync: Flushing old data
+10555:S 04 Apr 11:43:23.749 * MASTER <-> SLAVE sync: Loading DB in memory
+10555:S 04 Apr 11:43:23.749 * MASTER <-> SLAVE sync: Finished with success
+10555:S 04 Apr 11:43:23.750 * Background append only file rewriting started by pid 10571
+10555:S 04 Apr 11:43:23.872 * AOF rewrite child asks to stop sending diffs.
+10571:C 04 Apr 11:43:23.873 * Parent agreed to stop sending diffs. Finalizing AOF...
+10571:C 04 Apr 11:43:23.873 * Concatenating 0.00 MB of AOF diff received from parent.
+10571:C 04 Apr 11:43:23.873 * SYNC append only file rewrite performed
+10571:C 04 Apr 11:43:23.874 * AOF rewrite: 6 MB of memory used by copy-on-write
+10555:S 04 Apr 11:43:23.969 * Background AOF rewrite terminated with success
+10555:S 04 Apr 11:43:23.969 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+10555:S 04 Apr 11:43:23.969 * Background AOF rewrite finished successfully
+10555:signal-handler (1554392840) Received SIGTERM scheduling shutdown...
+10555:S 04 Apr 11:47:20.224 # User requested shutdown...
+10555:S 04 Apr 11:47:20.224 * Calling fsync() on the AOF file.
+10555:S 04 Apr 11:47:20.224 * Saving the final RDB snapshot before exiting.
+10555:S 04 Apr 11:47:20.225 * DB saved on disk
+10555:S 04 Apr 11:47:20.225 * Removing the pid file.
+10555:S 04 Apr 11:47:20.227 # Redis is now ready to exit, bye bye...
+10785:S 04 Apr 11:47:22.837 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 10785
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10785:S 04 Apr 11:47:22.842 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10785:S 04 Apr 11:47:22.842 # Server started, Redis version 3.2.6
+10785:S 04 Apr 11:47:22.842 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10785:S 04 Apr 11:47:22.842 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10785:S 04 Apr 11:47:22.842 * The server is now ready to accept connections on port 7503
+10785:S 04 Apr 11:47:22.842 * Connecting to MASTER 192.168.109.111:7501
+10785:S 04 Apr 11:47:22.843 * MASTER <-> SLAVE sync started
+10785:S 04 Apr 11:47:22.843 * Non blocking connect for SYNC fired the event.
+10785:S 04 Apr 11:47:22.848 * Master replied to PING, replication can continue...
+10785:S 04 Apr 11:47:22.852 * Partial resynchronization not possible (no cached master)
+10785:S 04 Apr 11:47:22.853 * Full resync from master: 988a1dacf1547f4f055cb2b62a3569c90da7ca40:1
+10785:S 04 Apr 11:47:22.888 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+10785:S 04 Apr 11:47:22.888 * MASTER <-> SLAVE sync: Flushing old data
+10785:S 04 Apr 11:47:22.888 * MASTER <-> SLAVE sync: Loading DB in memory
+10785:S 04 Apr 11:47:22.888 * MASTER <-> SLAVE sync: Finished with success
+10785:S 04 Apr 11:47:22.909 * Background append only file rewriting started by pid 10799
+10785:S 04 Apr 11:47:23.007 * AOF rewrite child asks to stop sending diffs.
+10799:C 04 Apr 11:47:23.011 * Parent agreed to stop sending diffs. Finalizing AOF...
+10799:C 04 Apr 11:47:23.011 * Concatenating 0.00 MB of AOF diff received from parent.
+10799:C 04 Apr 11:47:23.011 * SYNC append only file rewrite performed
+10799:C 04 Apr 11:47:23.011 * AOF rewrite: 6 MB of memory used by copy-on-write
+10785:S 04 Apr 11:47:23.064 * Background AOF rewrite terminated with success
+10785:S 04 Apr 11:47:23.064 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+10785:S 04 Apr 11:47:23.064 * Background AOF rewrite finished successfully
+10785:signal-handler (1554392901) Received SIGTERM scheduling shutdown...
+10785:S 04 Apr 11:48:21.775 # Connection with master lost.
+10785:S 04 Apr 11:48:21.775 * Caching the disconnected master state.
+10785:S 04 Apr 11:48:21.788 # User requested shutdown...
+10785:S 04 Apr 11:48:21.788 * Calling fsync() on the AOF file.
+10785:S 04 Apr 11:48:21.788 * Saving the final RDB snapshot before exiting.
+10785:S 04 Apr 11:48:21.789 * DB saved on disk
+10785:S 04 Apr 11:48:21.789 * Removing the pid file.
+10785:S 04 Apr 11:48:21.789 # Redis is now ready to exit, bye bye...
+10987:S 04 Apr 11:50:48.466 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 10987
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10987:S 04 Apr 11:50:48.468 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10987:S 04 Apr 11:50:48.468 # Server started, Redis version 3.2.6
+10987:S 04 Apr 11:50:48.468 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10987:S 04 Apr 11:50:48.468 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10987:S 04 Apr 11:50:48.468 * The server is now ready to accept connections on port 7503
+10987:S 04 Apr 11:50:48.468 * Connecting to MASTER 192.168.109.111:7501
+10987:S 04 Apr 11:50:48.468 * MASTER <-> SLAVE sync started
+10987:S 04 Apr 11:50:48.468 * Non blocking connect for SYNC fired the event.
+10987:S 04 Apr 11:50:48.469 * Master replied to PING, replication can continue...
+10987:S 04 Apr 11:50:48.469 * Partial resynchronization not possible (no cached master)
+10987:S 04 Apr 11:50:48.469 * Full resync from master: ac5e23d7d8d06ce9d22bf84baab3d56baf8a073c:1
+10987:S 04 Apr 11:50:48.559 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+10987:S 04 Apr 11:50:48.559 * MASTER <-> SLAVE sync: Flushing old data
+10987:S 04 Apr 11:50:48.559 * MASTER <-> SLAVE sync: Loading DB in memory
+10987:S 04 Apr 11:50:48.559 * MASTER <-> SLAVE sync: Finished with success
+10987:S 04 Apr 11:50:48.561 * Background append only file rewriting started by pid 11002
+10987:S 04 Apr 11:50:48.631 * AOF rewrite child asks to stop sending diffs.
+11002:C 04 Apr 11:50:48.631 * Parent agreed to stop sending diffs. Finalizing AOF...
+11002:C 04 Apr 11:50:48.631 * Concatenating 0.00 MB of AOF diff received from parent.
+11002:C 04 Apr 11:50:48.631 * SYNC append only file rewrite performed
+11002:C 04 Apr 11:50:48.632 * AOF rewrite: 6 MB of memory used by copy-on-write
+10987:S 04 Apr 11:50:48.670 * Background AOF rewrite terminated with success
+10987:S 04 Apr 11:50:48.670 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+10987:S 04 Apr 11:50:48.681 * Background AOF rewrite finished successfully
+10987:signal-handler (1554394850) Received SIGTERM scheduling shutdown...
+10987:S 04 Apr 12:20:50.666 # User requested shutdown...
+10987:S 04 Apr 12:20:50.666 * Calling fsync() on the AOF file.
+10987:S 04 Apr 12:20:50.666 * Saving the final RDB snapshot before exiting.
+10987:S 04 Apr 12:20:50.957 * DB saved on disk
+10987:S 04 Apr 12:20:50.957 * Removing the pid file.
+10987:S 04 Apr 12:20:50.957 # Redis is now ready to exit, bye bye...
+16019:S 04 Apr 20:28:28.997 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 16019
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+16019:S 04 Apr 20:28:29.010 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+16019:S 04 Apr 20:28:29.010 # Server started, Redis version 3.2.6
+16019:S 04 Apr 20:28:29.010 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+16019:S 04 Apr 20:28:29.011 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+16019:S 04 Apr 20:28:29.011 * The server is now ready to accept connections on port 7503
+16019:S 04 Apr 20:28:29.011 * Connecting to MASTER 192.168.109.111:7501
+16019:S 04 Apr 20:28:29.011 * MASTER <-> SLAVE sync started
+16019:S 04 Apr 20:28:29.011 * Non blocking connect for SYNC fired the event.
+16019:S 04 Apr 20:28:29.014 * Master replied to PING, replication can continue...
+16019:S 04 Apr 20:28:29.014 * Partial resynchronization not possible (no cached master)
+16019:S 04 Apr 20:28:29.015 * Full resync from master: aee4dbf165b4daeb213c3be51bef8b8b048e4c7a:1
+16019:S 04 Apr 20:28:29.093 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+16019:S 04 Apr 20:28:29.093 * MASTER <-> SLAVE sync: Flushing old data
+16019:S 04 Apr 20:28:29.093 * MASTER <-> SLAVE sync: Loading DB in memory
+16019:S 04 Apr 20:28:29.094 * MASTER <-> SLAVE sync: Finished with success
+16019:S 04 Apr 20:28:29.137 * Background append only file rewriting started by pid 16036
+16019:S 04 Apr 20:28:29.217 * AOF rewrite child asks to stop sending diffs.
+16036:C 04 Apr 20:28:29.217 * Parent agreed to stop sending diffs. Finalizing AOF...
+16036:C 04 Apr 20:28:29.218 * Concatenating 0.00 MB of AOF diff received from parent.
+16036:C 04 Apr 20:28:29.218 * SYNC append only file rewrite performed
+16036:C 04 Apr 20:28:29.219 * AOF rewrite: 6 MB of memory used by copy-on-write
+16019:S 04 Apr 20:28:29.264 * Background AOF rewrite terminated with success
+16019:S 04 Apr 20:28:29.264 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+16019:S 04 Apr 20:28:29.264 * Background AOF rewrite finished successfully
+16019:signal-handler (1554424867) Received SIGTERM scheduling shutdown...
+16019:S 04 Apr 20:41:07.603 # Connection with master lost.
+16019:S 04 Apr 20:41:07.603 * Caching the disconnected master state.
+16019:S 04 Apr 20:41:07.653 # User requested shutdown...
+16019:S 04 Apr 20:41:07.653 * Calling fsync() on the AOF file.
+16019:S 04 Apr 20:41:07.653 * Saving the final RDB snapshot before exiting.
+16019:S 04 Apr 20:41:07.654 * DB saved on disk
+16019:S 04 Apr 20:41:07.654 * Removing the pid file.
+16019:S 04 Apr 20:41:07.654 # Redis is now ready to exit, bye bye...
+16746:S 04 Apr 20:42:38.221 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7503
+ |    `-._   `._    /     _.-'    |     PID: 16746
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+16746:S 04 Apr 20:42:38.225 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+16746:S 04 Apr 20:42:38.225 # Server started, Redis version 3.2.6
+16746:S 04 Apr 20:42:38.225 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+16746:S 04 Apr 20:42:38.225 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+16746:S 04 Apr 20:42:38.225 * The server is now ready to accept connections on port 7503
+16746:S 04 Apr 20:42:38.225 * Connecting to MASTER 192.168.109.111:7501
+16746:S 04 Apr 20:42:38.226 * MASTER <-> SLAVE sync started
+16746:S 04 Apr 20:42:38.226 * Non blocking connect for SYNC fired the event.
+16746:S 04 Apr 20:42:38.226 * Master replied to PING, replication can continue...
+16746:S 04 Apr 20:42:38.227 * Partial resynchronization not possible (no cached master)
+16746:S 04 Apr 20:42:38.227 * Full resync from master: 02855f78d52a0687cf3afe5bbb49702e746d5bf8:1
+16746:S 04 Apr 20:42:38.302 * MASTER <-> SLAVE sync: receiving 76 bytes from master
+16746:S 04 Apr 20:42:38.302 * MASTER <-> SLAVE sync: Flushing old data
+16746:S 04 Apr 20:42:38.302 * MASTER <-> SLAVE sync: Loading DB in memory
+16746:S 04 Apr 20:42:38.302 * MASTER <-> SLAVE sync: Finished with success
+16746:S 04 Apr 20:42:38.308 * Background append only file rewriting started by pid 16760
+16746:S 04 Apr 20:42:38.492 * AOF rewrite child asks to stop sending diffs.
+16760:C 04 Apr 20:42:38.492 * Parent agreed to stop sending diffs. Finalizing AOF...
+16760:C 04 Apr 20:42:38.492 * Concatenating 0.00 MB of AOF diff received from parent.
+16760:C 04 Apr 20:42:38.493 * SYNC append only file rewrite performed
+16760:C 04 Apr 20:42:38.494 * AOF rewrite: 6 MB of memory used by copy-on-write
+16746:S 04 Apr 20:42:38.534 * Background AOF rewrite terminated with success
+16746:S 04 Apr 20:42:38.534 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+16746:S 04 Apr 20:42:38.534 * Background AOF rewrite finished successfully
