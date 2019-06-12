@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  master:
+    image: "redis:${REDIS_VERSION}"
+    container_name: "master"
+    restart: always
+    network_mode: "host"
+    ports:
+        - 7501:6379
+ 
+ 

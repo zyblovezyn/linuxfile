@@ -1,0 +1,28 @@
+version: '2'
+services:
+    mysql:
+        network_mode: "host"
+        container_name: "mall-mysql"
+        environment:
+            MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+            MYSQL_USER: 'rtmysql'
+            MYSQL_PASS: 'rtmysql'
+        image: "docker.io/mysql:latest" 
+        restart: always
+        volumes:
+            - "${MYSQL_DIR}/db:/var/lib/mysql"
+            - "${MYSQL_DIR}/log:/var/log/mysql"
+            - "${MYSQL_DIR}/conf/my.cnf:/etc/my.cnf"
+            - "${MYSQL_DIR}/init:/docker-entrypoint-initdb.d/"
+        ports:
+            - "3306:33060"
+    redis:
+        container_name: "mall-redis"
+        image: "redis:3.2"
+        ports:
+            - "6379:6379"
+        volumes:
+            - "${REDIS_DIR}/conf:/usr/local/etc/redis"
+            - "${REDIS_DIR}/data:/data"
+        command:
+            redis-server
