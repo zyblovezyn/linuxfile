@@ -354,3 +354,104 @@
 16748:S 04 Apr 20:42:38.534 * Background AOF rewrite terminated with success
 16748:S 04 Apr 20:42:38.534 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
 16748:S 04 Apr 20:42:38.535 * Background AOF rewrite finished successfully
+20433:C 26 Jun 2019 21:35:09.501 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20433:C 26 Jun 2019 21:35:09.502 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=20433, just started
+20433:C 26 Jun 2019 21:35:09.502 # Configuration loaded
+20437:S 26 Jun 2019 21:35:09.504 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+20437:S 26 Jun 2019 21:35:09.504 * Running mode=standalone, port=7504.
+20437:S 26 Jun 2019 21:35:09.504 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+20437:S 26 Jun 2019 21:35:09.504 # Server initialized
+20437:S 26 Jun 2019 21:35:09.504 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+20437:S 26 Jun 2019 21:35:09.504 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+20437:S 26 Jun 2019 21:35:09.504 * DB loaded from append only file: 0.000 seconds
+20437:S 26 Jun 2019 21:35:09.504 * Ready to accept connections
+20437:S 26 Jun 2019 21:35:09.505 * Connecting to MASTER 192.168.209.129:7501
+20437:S 26 Jun 2019 21:35:09.505 * MASTER <-> REPLICA sync started
+20437:S 26 Jun 2019 21:35:09.505 * Non blocking connect for SYNC fired the event.
+20437:S 26 Jun 2019 21:35:09.507 * Master replied to PING, replication can continue...
+20437:S 26 Jun 2019 21:35:09.507 * Partial resynchronization not possible (no cached master)
+20437:S 26 Jun 2019 21:35:09.508 * Full resync from master: 308c44f8ad7948e34e6031ae3deaada72e859205:0
+20437:S 26 Jun 2019 21:35:09.582 * MASTER <-> REPLICA sync: receiving 530 bytes from master
+20437:S 26 Jun 2019 21:35:09.582 * MASTER <-> REPLICA sync: Flushing old data
+20437:S 26 Jun 2019 21:35:09.582 * MASTER <-> REPLICA sync: Loading DB in memory
+20437:S 26 Jun 2019 21:35:09.582 * MASTER <-> REPLICA sync: Finished with success
+20437:S 26 Jun 2019 21:35:09.631 * Background append only file rewriting started by pid 20453
+20437:S 26 Jun 2019 21:35:09.678 * AOF rewrite child asks to stop sending diffs.
+20453:C 26 Jun 2019 21:35:09.678 * Parent agreed to stop sending diffs. Finalizing AOF...
+20453:C 26 Jun 2019 21:35:09.678 * Concatenating 0.00 MB of AOF diff received from parent.
+20453:C 26 Jun 2019 21:35:09.678 * SYNC append only file rewrite performed
+20453:C 26 Jun 2019 21:35:09.679 * AOF rewrite: 6 MB of memory used by copy-on-write
+20437:S 26 Jun 2019 21:35:09.742 * Background AOF rewrite terminated with success
+20437:S 26 Jun 2019 21:35:09.742 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+20437:S 26 Jun 2019 21:35:09.742 * Background AOF rewrite finished successfully
+20437:signal-handler (1561556330) Received SIGTERM scheduling shutdown...
+20437:S 26 Jun 2019 21:38:50.368 # User requested shutdown...
+20437:S 26 Jun 2019 21:38:50.368 * Calling fsync() on the AOF file.
+20437:S 26 Jun 2019 21:38:50.368 * Saving the final RDB snapshot before exiting.
+20437:S 26 Jun 2019 21:38:50.384 * DB saved on disk
+20437:S 26 Jun 2019 21:38:50.384 * Removing the pid file.
+20437:S 26 Jun 2019 21:38:50.384 # Redis is now ready to exit, bye bye...
+20649:C 26 Jun 2019 21:40:52.426 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20649:C 26 Jun 2019 21:40:52.426 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=20649, just started
+20649:C 26 Jun 2019 21:40:52.426 # Configuration loaded
+20653:S 26 Jun 2019 21:40:52.429 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+20653:S 26 Jun 2019 21:40:52.430 * Running mode=standalone, port=7504.
+20653:S 26 Jun 2019 21:40:52.430 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+20653:S 26 Jun 2019 21:40:52.435 # Server initialized
+20653:S 26 Jun 2019 21:40:52.435 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+20653:S 26 Jun 2019 21:40:52.435 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+20653:S 26 Jun 2019 21:40:52.435 * Reading RDB preamble from AOF file...
+20653:S 26 Jun 2019 21:40:52.435 * Reading the remaining AOF tail...
+20653:S 26 Jun 2019 21:40:52.435 * DB loaded from append only file: 0.000 seconds
+20653:S 26 Jun 2019 21:40:52.435 * Ready to accept connections
+20653:S 26 Jun 2019 21:40:52.435 * Connecting to MASTER 192.168.209.129:7501
+20653:S 26 Jun 2019 21:40:52.435 * MASTER <-> REPLICA sync started
+20653:S 26 Jun 2019 21:40:52.435 * Non blocking connect for SYNC fired the event.
+20653:S 26 Jun 2019 21:40:52.436 * Master replied to PING, replication can continue...
+20653:S 26 Jun 2019 21:40:52.437 * Partial resynchronization not possible (no cached master)
+20653:S 26 Jun 2019 21:40:52.438 * Full resync from master: 7291817d3529cc5a1a1c19fe9f4b927c7a6c62fa:0
+20653:S 26 Jun 2019 21:40:52.505 * MASTER <-> REPLICA sync: receiving 530 bytes from master
+20653:S 26 Jun 2019 21:40:52.505 * MASTER <-> REPLICA sync: Flushing old data
+20653:S 26 Jun 2019 21:40:52.505 * MASTER <-> REPLICA sync: Loading DB in memory
+20653:S 26 Jun 2019 21:40:52.505 * MASTER <-> REPLICA sync: Finished with success
+20653:S 26 Jun 2019 21:40:52.555 * Background append only file rewriting started by pid 20667
+20653:S 26 Jun 2019 21:40:52.591 * AOF rewrite child asks to stop sending diffs.
+20667:C 26 Jun 2019 21:40:52.591 * Parent agreed to stop sending diffs. Finalizing AOF...
+20667:C 26 Jun 2019 21:40:52.591 * Concatenating 0.00 MB of AOF diff received from parent.
+20667:C 26 Jun 2019 21:40:52.591 * SYNC append only file rewrite performed
+20667:C 26 Jun 2019 21:40:52.592 * AOF rewrite: 6 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 21:40:52.657 * Background AOF rewrite terminated with success
+20653:S 26 Jun 2019 21:40:52.657 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+20653:S 26 Jun 2019 21:40:52.657 * Background AOF rewrite finished successfully
+20653:S 26 Jun 2019 21:55:53.059 * 1 changes in 900 seconds. Saving...
+20653:S 26 Jun 2019 21:55:53.098 * Background saving started by pid 21168
+21168:C 26 Jun 2019 21:55:53.108 * DB saved on disk
+21168:C 26 Jun 2019 21:55:53.109 * RDB: 6 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 21:55:53.199 * Background saving terminated with success
+20653:S 26 Jun 2019 22:01:04.749 * 10 changes in 300 seconds. Saving...
+20653:S 26 Jun 2019 22:01:04.751 * Background saving started by pid 21188
+21188:C 26 Jun 2019 22:01:04.767 * DB saved on disk
+21188:C 26 Jun 2019 22:01:04.767 * RDB: 6 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 22:01:04.852 * Background saving terminated with success
+20653:S 26 Jun 2019 22:06:34.957 * 10 changes in 300 seconds. Saving...
+20653:S 26 Jun 2019 22:06:34.959 * Background saving started by pid 21194
+21194:C 26 Jun 2019 22:06:34.962 * DB saved on disk
+21194:C 26 Jun 2019 22:06:34.964 * RDB: 8 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 22:06:35.060 * Background saving terminated with success
+20653:S 26 Jun 2019 22:11:36.045 * 10 changes in 300 seconds. Saving...
+20653:S 26 Jun 2019 22:11:36.046 * Background saving started by pid 21200
+21200:C 26 Jun 2019 22:11:36.051 * DB saved on disk
+21200:C 26 Jun 2019 22:11:36.051 * RDB: 6 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 22:11:36.148 * Background saving terminated with success
+20653:S 26 Jun 2019 22:16:37.039 * 10 changes in 300 seconds. Saving...
+20653:S 26 Jun 2019 22:16:37.058 * Background saving started by pid 21208
+21208:C 26 Jun 2019 22:16:37.060 * DB saved on disk
+21208:C 26 Jun 2019 22:16:37.061 * RDB: 6 MB of memory used by copy-on-write
+20653:S 26 Jun 2019 22:16:37.159 * Background saving terminated with success
+20653:signal-handler (1561562034) Received SIGTERM scheduling shutdown...
+20653:S 26 Jun 2019 23:13:54.756 # User requested shutdown...
+20653:S 26 Jun 2019 23:13:54.757 * Calling fsync() on the AOF file.
+20653:S 26 Jun 2019 23:13:54.757 * Saving the final RDB snapshot before exiting.
+20653:S 26 Jun 2019 23:13:54.762 * DB saved on disk
+20653:S 26 Jun 2019 23:13:54.762 * Removing the pid file.
+20653:S 26 Jun 2019 23:13:54.762 # Redis is now ready to exit, bye bye...

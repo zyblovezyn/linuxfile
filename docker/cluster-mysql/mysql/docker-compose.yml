@@ -1,0 +1,17 @@
+version: '2'
+services:
+    mysql:
+        container_name: "master"
+        network_mode: "bridge"
+        environment:
+            MYSQL_ROOT_PASSWORD: "zyb12358"
+            MYSQL_USER: 'root'
+            MYSQL_PASS: 'zyb12358'
+        image: "mysql:latest" 
+        restart: always
+        volumes:
+            - "./db/master:/var/lib/mysql"
+            - "./conf/master/my.cnf:/etc/my.cnf"
+            - "./init:/docker-entrypoint-initdb.d/"
+        ports:
+            - "33060:3307"

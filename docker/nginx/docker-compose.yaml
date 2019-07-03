@@ -1,0 +1,13 @@
+version: '2'
+services:
+    nginx:
+        container_name: mall_nginx
+        image: nginx:1.13
+        restart: always
+        ports:
+            - 80:80
+        volumes:
+            - ./conf/conf.d:/etc/nginx/conf.d
+            - ./logs:/var/log/nginx/            
+
+ 

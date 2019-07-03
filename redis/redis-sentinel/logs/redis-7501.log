@@ -331,3 +331,101 @@
 16737:M 04 Apr 20:42:38.302 * Synchronization with slave 192.168.109.111:7502 succeeded
 16737:M 04 Apr 20:42:38.302 * Synchronization with slave 192.168.109.111:7503 succeeded
 16737:M 04 Apr 20:42:38.302 * Synchronization with slave 192.168.109.111:7504 succeeded
+20420:C 26 Jun 2019 21:35:09.461 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20420:C 26 Jun 2019 21:35:09.472 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=20420, just started
+20420:C 26 Jun 2019 21:35:09.472 # Configuration loaded
+20421:M 26 Jun 2019 21:35:09.474 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+20421:M 26 Jun 2019 21:35:09.475 * Running mode=standalone, port=7501.
+20421:M 26 Jun 2019 21:35:09.475 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+20421:M 26 Jun 2019 21:35:09.475 # Server initialized
+20421:M 26 Jun 2019 21:35:09.475 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+20421:M 26 Jun 2019 21:35:09.475 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+20421:M 26 Jun 2019 21:35:09.480 * DB loaded from append only file: 0.005 seconds
+20421:M 26 Jun 2019 21:35:09.480 * Ready to accept connections
+20421:M 26 Jun 2019 21:35:09.485 * Replica 192.168.209.129:7502 asks for synchronization
+20421:M 26 Jun 2019 21:35:09.485 * Full resync requested by replica 192.168.209.129:7502
+20421:M 26 Jun 2019 21:35:09.485 * Starting BGSAVE for SYNC with target: disk
+20421:M 26 Jun 2019 21:35:09.486 * Background saving started by pid 20431
+20431:C 26 Jun 2019 21:35:09.489 * DB saved on disk
+20431:C 26 Jun 2019 21:35:09.490 * RDB: 4 MB of memory used by copy-on-write
+20421:M 26 Jun 2019 21:35:09.502 * Replica 192.168.209.129:7503 asks for synchronization
+20421:M 26 Jun 2019 21:35:09.502 * Full resync requested by replica 192.168.209.129:7503
+20421:M 26 Jun 2019 21:35:09.502 * Waiting for end of BGSAVE for SYNC
+20421:M 26 Jun 2019 21:35:09.508 * Replica 192.168.209.129:7504 asks for synchronization
+20421:M 26 Jun 2019 21:35:09.508 * Full resync requested by replica 192.168.209.129:7504
+20421:M 26 Jun 2019 21:35:09.508 * Waiting for end of BGSAVE for SYNC
+20421:M 26 Jun 2019 21:35:09.581 * Background saving terminated with success
+20421:M 26 Jun 2019 21:35:09.581 * Synchronization with replica 192.168.209.129:7502 succeeded
+20421:M 26 Jun 2019 21:35:09.582 * Synchronization with replica 192.168.209.129:7503 succeeded
+20421:M 26 Jun 2019 21:35:09.582 * Synchronization with replica 192.168.209.129:7504 succeeded
+20421:signal-handler (1561556330) Received SIGTERM scheduling shutdown...
+20421:M 26 Jun 2019 21:38:50.368 # Connection with replica 192.168.209.129:7502 lost.
+20421:M 26 Jun 2019 21:38:50.368 # User requested shutdown...
+20421:M 26 Jun 2019 21:38:50.368 * Calling fsync() on the AOF file.
+20421:M 26 Jun 2019 21:38:50.368 * Saving the final RDB snapshot before exiting.
+20421:M 26 Jun 2019 21:38:50.384 * DB saved on disk
+20421:M 26 Jun 2019 21:38:50.384 * Removing the pid file.
+20421:M 26 Jun 2019 21:38:50.384 # Redis is now ready to exit, bye bye...
+20636:C 26 Jun 2019 21:40:52.398 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20636:C 26 Jun 2019 21:40:52.399 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=20636, just started
+20636:C 26 Jun 2019 21:40:52.399 # Configuration loaded
+20637:M 26 Jun 2019 21:40:52.401 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+20637:M 26 Jun 2019 21:40:52.403 * Running mode=standalone, port=7501.
+20637:M 26 Jun 2019 21:40:52.403 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+20637:M 26 Jun 2019 21:40:52.403 # Server initialized
+20637:M 26 Jun 2019 21:40:52.403 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+20637:M 26 Jun 2019 21:40:52.403 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+20637:M 26 Jun 2019 21:40:52.403 * Reading RDB preamble from AOF file...
+20637:M 26 Jun 2019 21:40:52.403 * Reading the remaining AOF tail...
+20637:M 26 Jun 2019 21:40:52.403 * DB loaded from append only file: 0.000 seconds
+20637:M 26 Jun 2019 21:40:52.403 * Ready to accept connections
+20637:M 26 Jun 2019 21:40:52.416 * Replica 192.168.209.129:7502 asks for synchronization
+20637:M 26 Jun 2019 21:40:52.416 * Full resync requested by replica 192.168.209.129:7502
+20637:M 26 Jun 2019 21:40:52.416 * Starting BGSAVE for SYNC with target: disk
+20637:M 26 Jun 2019 21:40:52.417 * Background saving started by pid 20647
+20647:C 26 Jun 2019 21:40:52.421 * DB saved on disk
+20647:C 26 Jun 2019 21:40:52.422 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 21:40:52.426 * Replica 192.168.209.129:7503 asks for synchronization
+20637:M 26 Jun 2019 21:40:52.426 * Full resync requested by replica 192.168.209.129:7503
+20637:M 26 Jun 2019 21:40:52.426 * Waiting for end of BGSAVE for SYNC
+20637:M 26 Jun 2019 21:40:52.437 * Replica 192.168.209.129:7504 asks for synchronization
+20637:M 26 Jun 2019 21:40:52.437 * Full resync requested by replica 192.168.209.129:7504
+20637:M 26 Jun 2019 21:40:52.437 * Waiting for end of BGSAVE for SYNC
+20637:M 26 Jun 2019 21:40:52.504 * Background saving terminated with success
+20637:M 26 Jun 2019 21:40:52.504 * Synchronization with replica 192.168.209.129:7502 succeeded
+20637:M 26 Jun 2019 21:40:52.504 * Synchronization with replica 192.168.209.129:7503 succeeded
+20637:M 26 Jun 2019 21:40:52.505 * Synchronization with replica 192.168.209.129:7504 succeeded
+20637:M 26 Jun 2019 21:55:53.009 * 1 changes in 900 seconds. Saving...
+20637:M 26 Jun 2019 21:55:53.014 * Background saving started by pid 21167
+21167:C 26 Jun 2019 21:55:53.016 * DB saved on disk
+21167:C 26 Jun 2019 21:55:53.016 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 21:55:53.115 * Background saving terminated with success
+20637:M 26 Jun 2019 22:01:04.748 * 10 changes in 300 seconds. Saving...
+20637:M 26 Jun 2019 22:01:04.749 * Background saving started by pid 21187
+21187:C 26 Jun 2019 22:01:04.752 * DB saved on disk
+21187:C 26 Jun 2019 22:01:04.752 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 22:01:04.850 * Background saving terminated with success
+20637:M 26 Jun 2019 22:06:34.995 * 10 changes in 300 seconds. Saving...
+20637:M 26 Jun 2019 22:06:34.998 * Background saving started by pid 21195
+21195:C 26 Jun 2019 22:06:34.999 * DB saved on disk
+21195:C 26 Jun 2019 22:06:35.000 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 22:06:35.098 * Background saving terminated with success
+20637:M 26 Jun 2019 22:11:36.050 * 10 changes in 300 seconds. Saving...
+20637:M 26 Jun 2019 22:11:36.051 * Background saving started by pid 21202
+21202:C 26 Jun 2019 22:11:36.086 * DB saved on disk
+21202:C 26 Jun 2019 22:11:36.087 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 22:11:36.152 * Background saving terminated with success
+20637:M 26 Jun 2019 22:16:37.031 * 10 changes in 300 seconds. Saving...
+20637:M 26 Jun 2019 22:16:37.034 * Background saving started by pid 21207
+21207:C 26 Jun 2019 22:16:37.046 * DB saved on disk
+21207:C 26 Jun 2019 22:16:37.048 * RDB: 4 MB of memory used by copy-on-write
+20637:M 26 Jun 2019 22:16:37.135 * Background saving terminated with success
+20637:signal-handler (1561562034) Received SIGTERM scheduling shutdown...
+20637:M 26 Jun 2019 23:13:54.763 # Connection with replica 192.168.209.129:7503 lost.
+20637:M 26 Jun 2019 23:13:54.763 # Connection with replica 192.168.209.129:7504 lost.
+20637:M 26 Jun 2019 23:13:54.775 # User requested shutdown...
+20637:M 26 Jun 2019 23:13:54.775 * Calling fsync() on the AOF file.
+20637:M 26 Jun 2019 23:13:54.775 * Saving the final RDB snapshot before exiting.
+20637:M 26 Jun 2019 23:13:54.776 * DB saved on disk
+20637:M 26 Jun 2019 23:13:54.776 * Removing the pid file.
+20637:M 26 Jun 2019 23:13:54.776 # Redis is now ready to exit, bye bye...
