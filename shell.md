@@ -33,4 +33,10 @@
 			q 取消锁屏
 			k 删除光标后的
 
+### ping
+	ping -c 4 ipaddress ping四次后结束
+	true 永远返回真 false 永远返回假
+	&& || 具有逻辑判断
+	
+
 
